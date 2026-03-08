@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Para la Mujer Más Especial 🌸</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <meta name="author" content="Alejandro Vasquez">
+</head>
+<body>
+    <!-- Flores decorativas -->
+    <div class="flower flower1">🌸</div>
+    <div class="flower flower2">🌺</div>
+    <div class="flower flower3">🌹</div>
+    <div class="flower flower4">🌷</div>
+
+    <div class="container">
+        <h1>¡Feliz Día amor!</h1>
+        <div class="subtitle">Para ti, que haces el mundo más hermoso 💕</div>
+
+        <div class="message-section">
+            <div class="heart-message">
+                <p>💖 Amore,</p>
+                <p>Siempre querré darte todo.</p>
+                <p>Por eso, he preparado un regalo muy especial para ti...</p>
+            </div>
+        </div>
+
+        <!-- Sección de confirmación de identidad -->
+        <div class="keyword-container" id="keywordSection">
+            <label for="keyword">🔐 Para confirmar que eres tú, escribe la palabra clave:</label>
+            <input type="text" id="keyword" placeholder="Escribe aquí la palabra mágica..." autocomplete="off">
+            <button class="btn" onclick="verifyIdentity()">✨ Si aceptas? ✨</button>
+            <div class="hint">💡 Pista: ¿Sabes como me tienes agregado en WhatsApp?...</div>
+            <div class="error-message" id="errorMessage">❌ Ups. ¡Intenta de nuevo, more!</div>
+        </div>
+
+        <!-- Sección del regalo (inicialmente oculta) -->
+        <div id="giftSection" style="display: none;">
+            <div class="gift-container">
+                <div class="netflix-badge">
+                    🎬 NETFLIX PREMIUM SOLO PARA TI🎬
+                </div>
+                
+                <div class="credential-box">
+                    <p style="color: #6c757d; margin-bottom: 15px; text-align: center;">
+                        <strong>🌸 Para la mujer más especial 🌸</strong>
+                    </p>
+                    
+                    <div class="credential-item">
+                        <div class="credential-label">📧 CORREO ELECTRÓNICO</div>
+                        <div class="credential-value" id="emailValue">
+                            nela.netflix1@gmail.com
+                            <button class="copy-btn" onclick="copyToClipboard('emailValue', 'emailCopyMessage')">📋</button>
+                        </div>
+                        <div class="copy-message" id="emailCopyMessage">¡Copiado! ✅</div>
+                    </div>
+
+                    <div class="credential-item">
+                        <div class="credential-label">🔑 CONTRASEÑA</div>
+                        <div class="credential-value" id="passwordValue">
+                            Nel@.netflix1#.
+                            <button class="copy-btn" onclick="copyToClipboard('passwordValue', 'passwordCopyMessage')">📋</button>
+                        </div>
+                        <div class="copy-message" id="passwordCopyMessage">¡Copiado! ✅</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px; padding: 15px; background: #fff0f3; border-radius: 15px;">
+                    <p style="color: #d43f6b; margin-bottom: 10px;">💝 Haz esto amor!:</p>
+                    <p style="color: #666; font-size: 0.95rem;">1. Copia el correo y la contraseña<br>2. Ve a Netflix y disfruta more<br>3. Recuerda: ¡Te lo mereces todo!</p>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <p style="color: #e50914; font-size: 1.5rem;">❤️</p>
+                    <p style="color: #b23b5e;">Disfruta de tus series favoritas, porque tú eres la protagonista de esta historia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-message">
+            <p>Con muchísimo cariño y amor!  🌸</p>
+            <p>#i love You ..!</p>
+        </div>
+    </div>
+    <script src="/assets/main.js"></script>
+</body>
+</html>
